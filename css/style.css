@@ -1,0 +1,131 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+}
+
+/* variables */
+:root{
+    --primary-color: #c72727;
+    --secondary-color: #ffffff;
+    --tertiary-color: #333;
+    --quarternary-color: grey;
+    --quinary-color: #f99500;
+}
+
+/* useful */
+
+.btn{
+    padding: 0.75rem;
+    padding: 8px 24px;
+}
+
+.btn-red{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-light{
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.social a{
+    color: var(--quarternary-color);
+    padding-right: 8px;
+}
+
+.social btn{
+    padding: 12px;
+}
+
+.category{
+    border-radius: 45%;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    padding: 6.4px 9.6px;
+    font-size: 0.55rem;
+}
+
+.category-sports{
+    background: var(--quinary-color);
+    width: 10%;
+}
+
+/* Menu */
+.container{
+    display: grid;
+    grid-template-columns: 2.5fr 1.2fr 0.8fr;
+    grid-template-rows: 40px;
+    margin: 0px 1px;
+    padding: 1rem;
+    position:sticky;
+}
+
+.logo{
+    height: 100%;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* showcase */
+
+.showcase{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background: url('../img/featured.jpg') no-repeat center center/cover;
+    position: relative;
+    color: var(--secondary-color);
+}
+
+.showcase:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.showcase-content{
+    z-index: 1;
+    align-self: center;
+    max-width: 50%;
+    padding-left: 48px;
+}
+
+.showcase h1{
+    font: 32px;
+    font-family: 'Staatliches', cursive;
+}
+
+.showcase p{
+    margin: 8px 0px 16px;
+}
